@@ -3,7 +3,7 @@ name: CI
 on:
   pull_request:
   push:
-    branches: [ main, master ]
+    branches: [main, master]
 
 concurrency:
   group: ci-${{ github.workflow }}-${{ github.ref }}
@@ -11,9 +11,8 @@ concurrency:
 
 jobs:
   ci:
-    name: Lint • Typecheck • Test • Build
+    name: Lint • Typecheck • Test • Build (Node ${{ matrix.node }})
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node: [18, 20]
@@ -23,46 +22,40 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Node + cache for pnpm
       - name: Setup Node ${{ matrix.node }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
-          cache: 'pnpm'
+          cache: pnpm
 
-      - name: Setup PNPM
+      # Install pnpm and run install with cache warming
+      - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 9
-          run_install: false
+          run_install: true
 
-      - name: Restore PNPM store
-        id: pnpm-cache
+      - name: Show versions
         run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
-      - uses: actions/cache@v4
-        with:
-          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-          key: pnpm-store-${{ runner.os }}-${{ matrix.node }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            pnpm-store-${{ runner.os }}-${{ matrix.node }}-
+          node -v
+          pnpm -v
 
-      - name: Install deps
-        run: pnpm install --frozen-lockfile
-
+      # Monorepo quality gates
       - name: Lint
-        run: pnpm -r run lint
+        run: pnpm lint
 
       - name: Type check
-        run: pnpm run type-check
+        run: pnpm type-check
 
       - name: Tests
-        run: pnpm run test -- --run
+        run: pnpm test -- --run
 
       - name: Build
-        run: pnpm run build
+        run: pnpm build
 
-      # — Optional: upload build artifacts from apps (uncomment when you have apps)
-      # - name: Upload app build
+      # Optional: upload any app builds later
+      # - name: Upload app dist
       #   if: success()
       #   uses: actions/upload-artifact@v4
       #   with:
