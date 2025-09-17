@@ -1,0 +1,11 @@
+// vite.config.ts
+import { defineConfig } from "file:///Users/kirillbaranov/Desktop/kb-labs/kb-labs-product-template/node_modules/.pnpm/vite@5.4.20_@types+node@24.3.3/node_modules/vite/dist/node/index.js";
+import vue from "file:///Users/kirillbaranov/Desktop/kb-labs/kb-labs-product-template/node_modules/.pnpm/@vitejs+plugin-vue@5.2.4_vite@5.4.20_@types+node@24.3.3__vue@3.5.21_typescript@5.9.2_/node_modules/@vitejs/plugin-vue/dist/index.mjs";
+var vite_config_default = defineConfig({
+  plugins: [vue()],
+  server: {
+    port: 5173,
+  },
+});
+export { vite_config_default as default };
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcudHMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCIvVXNlcnMva2lyaWxsYmFyYW5vdi9EZXNrdG9wL2tiLWxhYnMva2ItbGFicy1wcm9kdWN0LXRlbXBsYXRlL2FwcHMvZGVtb1wiO2NvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9maWxlbmFtZSA9IFwiL1VzZXJzL2tpcmlsbGJhcmFub3YvRGVza3RvcC9rYi1sYWJzL2tiLWxhYnMtcHJvZHVjdC10ZW1wbGF0ZS9hcHBzL2RlbW8vdml0ZS5jb25maWcudHNcIjtjb25zdCBfX3ZpdGVfaW5qZWN0ZWRfb3JpZ2luYWxfaW1wb3J0X21ldGFfdXJsID0gXCJmaWxlOi8vL1VzZXJzL2tpcmlsbGJhcmFub3YvRGVza3RvcC9rYi1sYWJzL2tiLWxhYnMtcHJvZHVjdC10ZW1wbGF0ZS9hcHBzL2RlbW8vdml0ZS5jb25maWcudHNcIjtpbXBvcnQgeyBkZWZpbmVDb25maWcgfSBmcm9tIFwidml0ZVwiXG5pbXBvcnQgdnVlIGZyb20gXCJAdml0ZWpzL3BsdWdpbi12dWVcIlxuXG5leHBvcnQgZGVmYXVsdCBkZWZpbmVDb25maWcoe1xuICBwbHVnaW5zOiBbdnVlKCldLFxuICBzZXJ2ZXI6IHtcbiAgICBwb3J0OiA1MTczXG4gIH1cbn0pIl0sCiAgIm1hcHBpbmdzIjogIjtBQUF1WSxTQUFTLG9CQUFvQjtBQUNwYSxPQUFPLFNBQVM7QUFFaEIsSUFBTyxzQkFBUSxhQUFhO0FBQUEsRUFDMUIsU0FBUyxDQUFDLElBQUksQ0FBQztBQUFBLEVBQ2YsUUFBUTtBQUFBLElBQ04sTUFBTTtBQUFBLEVBQ1I7QUFDRixDQUFDOyIsCiAgIm5hbWVzIjogW10KfQo=
