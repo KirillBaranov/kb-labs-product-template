@@ -1,7 +1,7 @@
 # KB Labs — Product Template
 
 This is the **baseline template** for products under the **@kb-labs** namespace.  
-It is designed for multi-package repositories using pnpm workspaces.  
+It is designed for multi-package repositories using pnpm workspaces.
 
 **Goals:** Fast bootstrap, unified quality rules, simple publishing, and reusable core.
 
@@ -47,20 +47,20 @@ cp -r packages/package-name packages/<new-package-name>
 
 ## 🛠️ Available Scripts
 
-| Script | Description |
-|--------|-------------|
-| `pnpm dev` | Start development mode for all packages |
-| `pnpm build` | Build all packages |
-| `pnpm build:clean` | Clean and build all packages |
-| `pnpm test` | Run all tests |
-| `pnpm test:watch` | Run tests in watch mode |
-| `pnpm lint` | Lint all code |
-| `pnpm lint:fix` | Fix linting issues |
-| `pnpm type-check` | TypeScript type checking |
-| `pnpm check` | Run lint, type-check, and tests |
-| `pnpm ci` | Full CI pipeline (clean, build, check) |
-| `pnpm clean` | Clean build artifacts |
-| `pnpm clean:all` | Clean all node_modules and build artifacts |
+| Script             | Description                                |
+| ------------------ | ------------------------------------------ |
+| `pnpm dev`         | Start development mode for all packages    |
+| `pnpm build`       | Build all packages                         |
+| `pnpm build:clean` | Clean and build all packages               |
+| `pnpm test`        | Run all tests                              |
+| `pnpm test:watch`  | Run tests in watch mode                    |
+| `pnpm lint`        | Lint all code                              |
+| `pnpm lint:fix`    | Fix linting issues                         |
+| `pnpm type-check`  | TypeScript type checking                   |
+| `pnpm check`       | Run lint, type-check, and tests            |
+| `pnpm ci`          | Full CI pipeline (clean, build, check)     |
+| `pnpm clean`       | Clean build artifacts                      |
+| `pnpm clean:all`   | Clean all node_modules and build artifacts |
 
 ## 📋 Development Policies
 
@@ -68,6 +68,7 @@ cp -r packages/package-name packages/<new-package-name>
 - **Testing:** Vitest with fixtures for integration testing
 - **Versioning:** SemVer with automated releases through Changesets
 - **Architecture:** Document decisions in ADRs (see `docs/adr/`)
+- **Tooling:** Shared configurations via `@kb-labs/devkit` (see [ADR-0005](docs/adr/0005-use-devkit-for-shared-tooling.md))
 
 ## 🔧 Requirements
 

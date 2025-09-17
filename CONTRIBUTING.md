@@ -1,6 +1,6 @@
 # Contributing Guide
 
-Thanks for considering a contribution to **KB Labs** projects!  
+Thanks for considering a contribution to **KB Labs** projects!
 
 ---
 
@@ -17,6 +17,17 @@ pnpm dev
 - **Testing**: cover all changes with Vitest. Run `pnpm test`.
 - **Commits**: use clear, conventional messages (e.g., `feat: add X`, `fix: correct Y`).
 - **ADRs**: for architectural changes, add a new record in `docs/adr`.
+
+## DevKit Integration
+
+This project uses `@kb-labs/devkit` for shared tooling configurations. Key points:
+
+- **Configurations**: ESLint, Prettier, Vitest, TypeScript, and GitHub Actions are managed by devkit
+- **Local configs**: Act as thin wrappers over devkit configurations
+- **Updates**: When devkit is updated, run `pnpm install` to get the latest configurations
+- **Customization**: For project-specific rules, extend devkit configs rather than overriding them
+
+For more details, see [ADR-0005: Use DevKit for Shared Tooling](docs/adr/0005-use-devkit-for-shared-tooling.md).
 
 ---
 

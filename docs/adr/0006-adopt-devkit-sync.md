@@ -2,7 +2,7 @@
 
 **Date:** 2025-09-18  
 **Status:** Accepted  
-**Deciders:** KB Labs Team  
+**Deciders:** KB Labs Team
 
 ## Context
 
@@ -11,6 +11,7 @@ This template inherits shared tooling from `@kb-labs/devkit`: ESLint/Prettier/Vi
 ## Decision
 
 The template **adopts DevKit synchronization**:
+
 - Tooling configs are **thin wrappers** over DevKit exports (no local forks)
 - Cursor agents (`/agents`, `.cursorrules`, `AGENTS.md`) are synchronized from DevKit via:
   ```bash
@@ -21,6 +22,7 @@ The template **adopts DevKit synchronization**:
 ## Consequences
 
 **Positive:**
+
 - Guarantees consistency with KB Labs standards
 - Reduces setup time for new products
 - Keeps docs and agents up-to-date without manual copy/paste
@@ -28,6 +30,7 @@ The template **adopts DevKit synchronization**:
 - Centralized updates; predictable upgrades
 
 **Negative:**
+
 - Requires DevKit availability and version pinning
 - Local deviations must be explicitly justified (and usually upstreamed to DevKit)
 
