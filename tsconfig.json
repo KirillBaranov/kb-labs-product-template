@@ -1,7 +1,6 @@
 {
   "files": [],
-  "references": [
-    { "path": "packages/package-name" },
-    { "path": "apps/demo" }
-  ]
+  "references": [{ "path": "./packages/" }, { "path": "./apps/" }],
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": { "composite": true, "noEmit": true }
 }
