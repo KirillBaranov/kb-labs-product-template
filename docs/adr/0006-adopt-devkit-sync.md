@@ -42,4 +42,4 @@ The template **adopts DevKit synchronization**:
 
 ## References
 
-- DevKit ADR: `@kb-labs/devkit/docs/adr/0006-repo-synchronization-via-devkit.md`
+- DevKit ADR: `@kb-labs/devkit/docs/adr/0001-repo-synchronization-via-devkit.md`
