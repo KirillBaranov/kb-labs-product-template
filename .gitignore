@@ -64,3 +64,6 @@ packages/*/coverage/
 analytics/
 *.sqlite
 *.db
+
+# DevKit provenance
+kb-labs/DEVKIT_SYNC.json
