@@ -22,6 +22,15 @@
     "packages/*"
   ],
   "scripts": {
+    "// ——— devkit": "────────────────────────────────────────",
+    "sync": "node scripts/devkit-sync.mjs",
+    "sync:force": "node scripts/devkit-sync.mjs --force",
+    "sync:agents": "node scripts/devkit-sync.mjs agents",
+    "sync:cursorrules": "node scripts/devkit-sync.mjs cursorrules",
+    "sync:vscode": "node scripts/devkit-sync.mjs vscode",
+    "sync:check": "node scripts/devkit-sync.mjs --check",
+    "postinstall": "pnpm -s sync || true",
+
     "// ——— core": "────────────────────────────────────────",
     "build": "pnpm -r run build",
     "build:clean": "pnpm -r run clean && pnpm -r run build",
