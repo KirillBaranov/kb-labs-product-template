@@ -30,7 +30,6 @@
     "sync:vscode": "node scripts/devkit-sync.mjs vscode",
     "sync:check": "node scripts/devkit-sync.mjs --check",
     "postinstall": "pnpm -s sync || true",
-
     "// ——— core": "────────────────────────────────────────",
     "build": "pnpm -r run build",
     "build:clean": "pnpm -r run clean && pnpm -r run build",
@@ -39,6 +38,7 @@
     "lint": "pnpm -r exec eslint .",
     "lint:fix": "pnpm -r exec eslint . --fix",
     "test": "pnpm -r --if-present run test",
+    "test:coverage": "pnpm -r --if-present run test --coverage",
     "test:watch": "pnpm -r --parallel --if-present run test:watch",
     "type-check": "pnpm -r run type-check",
     "format": "prettier -w .",
@@ -68,6 +68,7 @@
     "typescript": "^5",
     "prettier": "^3",
     "vitest": "^3",
+    "@vitest/coverage-v8": "^3",
     "tsup": "^8",
     "rimraf": "^6"
   },
