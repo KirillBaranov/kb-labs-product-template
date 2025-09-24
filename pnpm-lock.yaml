@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@kb-labs/devkit':
         specifier: github:KirillBaranov/kb-labs-devkit#main
-        version: https://codeload.github.com/KirillBaranov/kb-labs-devkit/tar.gz/1be2c8d69ecc0a4afb3470cd846648e3608a7a6e(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint@9.35.0)(tsup@8.5.0(postcss@8.5.6)(tsx@4.20.5)(typescript@5.9.2))(typescript-eslint@8.44.0(eslint@9.35.0)(typescript@5.9.2))(typescript@5.9.2)(vitest@3.2.4(@types/node@24.5.1))
+        version: https://codeload.github.com/KirillBaranov/kb-labs-devkit/tar.gz/96be581eaa317d1a1369ee7f62a983bb085659b1(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint@9.35.0)(tsup@8.5.0(postcss@8.5.6)(tsx@4.20.5)(typescript@5.9.2))(typescript-eslint@8.44.0(eslint@9.35.0)(typescript@5.9.2))(typescript@5.9.2)(vitest@3.2.4(@types/node@24.5.1))
       '@typescript-eslint/eslint-plugin':
         specifier: ^8
         version: 8.44.0(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint@9.35.0)(typescript@5.9.2)
@@ -47,7 +47,7 @@ importers:
     devDependencies:
       '@kb-labs/devkit':
         specifier: github:KirillBaranov/kb-labs-devkit#main
-        version: https://codeload.github.com/KirillBaranov/kb-labs-devkit/tar.gz/1be2c8d69ecc0a4afb3470cd846648e3608a7a6e(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint@9.35.0)(tsup@8.5.0(postcss@8.5.6)(tsx@4.20.5)(typescript@5.9.2))(typescript-eslint@8.44.0(eslint@9.35.0)(typescript@5.9.2))(typescript@5.9.2)(vitest@3.2.4(@types/node@24.5.1))
+        version: https://codeload.github.com/KirillBaranov/kb-labs-devkit/tar.gz/96be581eaa317d1a1369ee7f62a983bb085659b1(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint@9.35.0)(tsup@8.5.0(postcss@8.5.6)(tsx@4.20.5)(typescript@5.9.2))(typescript-eslint@8.44.0(eslint@9.35.0)(typescript@5.9.2))(typescript@5.9.2)(vitest@3.2.4(@types/node@24.5.1))
       '@vitejs/plugin-vue':
         specifier: ^5.0.0
         version: 5.2.4(vite@5.4.20(@types/node@24.5.1))(vue@3.5.21(typescript@5.9.2))
@@ -480,8 +480,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@kb-labs/devkit@https://codeload.github.com/KirillBaranov/kb-labs-devkit/tar.gz/1be2c8d69ecc0a4afb3470cd846648e3608a7a6e':
-    resolution: {tarball: https://codeload.github.com/KirillBaranov/kb-labs-devkit/tar.gz/1be2c8d69ecc0a4afb3470cd846648e3608a7a6e}
+  '@kb-labs/devkit@https://codeload.github.com/KirillBaranov/kb-labs-devkit/tar.gz/96be581eaa317d1a1369ee7f62a983bb085659b1':
+    resolution: {tarball: https://codeload.github.com/KirillBaranov/kb-labs-devkit/tar.gz/96be581eaa317d1a1369ee7f62a983bb085659b1}
     version: 0.1.0
     engines: {node: '>=20.0.0', pnpm: '>=9.11.0'}
     peerDependencies:
@@ -2624,11 +2624,11 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@kb-labs/devkit@https://codeload.github.com/KirillBaranov/kb-labs-devkit/tar.gz/1be2c8d69ecc0a4afb3470cd846648e3608a7a6e(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint@9.35.0)(tsup@8.5.0(postcss@8.5.6)(tsx@4.20.5)(typescript@5.9.2))(typescript-eslint@8.44.0(eslint@9.35.0)(typescript@5.9.2))(typescript@5.9.2)(vitest@3.2.4(@types/node@24.5.1))':
+  '@kb-labs/devkit@https://codeload.github.com/KirillBaranov/kb-labs-devkit/tar.gz/96be581eaa317d1a1369ee7f62a983bb085659b1(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint@9.35.0)(tsup@8.5.0(postcss@8.5.6)(tsx@4.20.5)(typescript@5.9.2))(typescript-eslint@8.44.0(eslint@9.35.0)(typescript@5.9.2))(typescript@5.9.2)(vitest@3.2.4(@types/node@24.5.1))':
     dependencies:
       eslint: 9.35.0
-      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint@9.35.0))(eslint@9.35.0)
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint@9.35.0))(eslint@9.35.0))(eslint@9.35.0)
+      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@9.35.0)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1)(eslint@9.35.0)
       tsup: 8.5.0(postcss@8.5.6)(tsx@4.20.5)(typescript@5.9.2)
       typescript: 5.9.2
       typescript-eslint: 8.44.0(eslint@9.35.0)(typescript@5.9.2)
@@ -3472,7 +3472,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint@9.35.0))(eslint@9.35.0):
+  eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0)(eslint@9.35.0):
     dependencies:
       '@nolyfill/is-core-module': 1.0.39
       debug: 4.4.3
@@ -3483,22 +3483,22 @@ snapshots:
       tinyglobby: 0.2.15
       unrs-resolver: 1.11.1
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint@9.35.0))(eslint@9.35.0))(eslint@9.35.0)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1)(eslint@9.35.0)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.1(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint@9.35.0))(eslint@9.35.0))(eslint@9.35.0):
+  eslint-module-utils@2.12.1(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0)(eslint@9.35.0))(eslint@9.35.0):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
       '@typescript-eslint/parser': 8.44.0(eslint@9.35.0)(typescript@5.9.2)
       eslint: 9.35.0
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint@9.35.0))(eslint@9.35.0)
+      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@9.35.0)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint@9.35.0))(eslint@9.35.0))(eslint@9.35.0):
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1)(eslint@9.35.0):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.9
@@ -3509,7 +3509,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.35.0
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.1(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint@9.35.0))(eslint@9.35.0))(eslint@9.35.0)
+      eslint-module-utils: 2.12.1(@typescript-eslint/parser@8.44.0(eslint@9.35.0)(typescript@5.9.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0)(eslint@9.35.0))(eslint@9.35.0)
       hasown: 2.0.2
       is-core-module: 2.16.1
       is-glob: 4.0.3
