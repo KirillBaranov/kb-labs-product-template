@@ -1,13 +1,16 @@
-import cfg from '@kb-labs/devkit/eslint/node.js';
+import nodePreset from '@kb-labs/devkit/eslint/node.js';
 
 export default [
-  ...cfg,
+  ...nodePreset,
   {
     ignores: [
       '**/dist/**',
       '**/coverage/**',
       '**/node_modules/**',
-      '**/*.d.ts'
+      '**/*.d.ts',
+      '**/tsup.config.ts',
+      '**/vitest.config.ts',
+      '**/*.vue'
     ]
   }
 ];

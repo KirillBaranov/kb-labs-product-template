@@ -1,2 +1,6 @@
-import { defineConfig } from 'tsup';
-export default defineConfig({ entry: ['src/index.ts'], outDir: 'dist', format: ['esm'], target: 'es2022', sourcemap: true, clean: true, treeshake: true, dts: false, minify: false });
+import baseConfig from '@kb-labs/devkit/tsup/node.js';
+
+export default {
+  ...baseConfig,
+  entry: ['src/index.ts']
+};
