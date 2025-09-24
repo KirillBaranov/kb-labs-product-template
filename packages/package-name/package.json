@@ -18,8 +18,8 @@
   "sideEffects": false,
   "scripts": {
     "clean": "rimraf dist",
-    "build": "tsup --config tsup.config.ts && tsc -p tsconfig.types.json --emitDeclarationOnly",
-    "dev": "tsup --config tsup.config.ts --watch",
+    "build": "tsup",
+    "dev": "tsup --watch",
     "type-check": "tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -27,6 +27,9 @@
     "test:watch": "vitest -c ../../vitest.config.ts"
   },
   "devDependencies": {
-    "tsx": "^4.20.5"
+    "tsx": "^4.20.5",
+    "vitest": "^3",
+    "@kb-labs/devkit": "github:KirillBaranov/kb-labs-devkit#main",
+    "tsup": "^8"
   }
 }
