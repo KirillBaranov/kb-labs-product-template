@@ -62,6 +62,32 @@ cp -r packages/package-name packages/<new-package-name>
 | `pnpm clean`       | Clean build artifacts                      |
 | `pnpm clean:all`   | Clean all node_modules and build artifacts |
 
+### 🔧 DevKit Commands
+
+| Script              | Description                                |
+| ------------------- | ------------------------------------------ |
+| `pnpm devkit:sync`  | Sync DevKit configurations to workspace   |
+| `pnpm devkit:check` | Check if DevKit sync is needed             |
+| `pnpm devkit:force` | Force DevKit sync (overwrite existing)     |
+| `pnpm devkit:help`  | Show DevKit sync help                      |
+
+## 🔧 DevKit Integration
+
+This template uses `@kb-labs/devkit` for shared tooling and configurations. DevKit provides:
+
+- **Unified Configurations:** ESLint, Prettier, TypeScript, Vitest, and TSUP configs
+- **Automatic Sync:** Keeps workspace configs in sync with latest DevKit versions
+- **Zero Maintenance:** No need to manually update config files
+
+### DevKit Commands Usage
+
+- **`pnpm devkit:sync`** - Syncs DevKit configurations to your workspace (runs automatically on `pnpm install`)
+- **`pnpm devkit:check`** - Checks if your workspace configs are up-to-date with DevKit
+- **`pnpm devkit:force`** - Forces sync even if local files exist (overwrites local changes)
+- **`pnpm devkit:help`** - Shows detailed help and available options
+
+For more details, see [ADR-0005: Use DevKit for Shared Tooling](docs/adr/0005-use-devkit-for-shared-tooling.md).
+
 ## 📋 Development Policies
 
 - **Code Style:** ESLint + Prettier, TypeScript strict mode

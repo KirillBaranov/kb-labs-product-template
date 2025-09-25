@@ -27,6 +27,13 @@ This project uses `@kb-labs/devkit` for shared tooling configurations. Key point
 - **Updates**: When devkit is updated, run `pnpm install` to get the latest configurations
 - **Customization**: For project-specific rules, extend devkit configs rather than overriding them
 
+### DevKit Commands
+
+- `pnpm devkit:sync` - Sync DevKit configurations (runs automatically on install)
+- `pnpm devkit:check` - Check if sync is needed
+- `pnpm devkit:force` - Force sync (overwrites existing configs)
+- `pnpm devkit:help` - Show help and available options
+
 For more details, see [ADR-0005: Use DevKit for Shared Tooling](docs/adr/0005-use-devkit-for-shared-tooling.md).
 
 ---
