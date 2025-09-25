@@ -1,8 +1,8 @@
 # ADR-0000: [Brief Decision Title]
 
-## Status
-
-Proposed | Accepted | Deprecated | Superseded
+**Date:** 2025-09-13
+**Status:** Proposed | Accepted | Deprecated | Superseded
+**Deciders:** KB Labs Team
 
 ## Context
 
