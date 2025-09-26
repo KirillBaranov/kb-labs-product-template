@@ -45,9 +45,7 @@
     "ci": "pnpm clean && pnpm build && pnpm check",
     "// ——— cleanup": "────────────────────────────────────────",
     "clean": "pnpm -r run clean",
-    "clean:all": "rimraf node_modules packages/*/node_modules apps/*/node_modules dist .sentinel",
-    "// ——— cursor agents": "────────────────────────────────────",
-    "agents:sync": "kb-labs-agents-sync"
+    "clean:all": "rimraf node_modules packages/*/node_modules apps/*/node_modules dist"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx,json,md,yml,yaml}": [
