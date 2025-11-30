@@ -28,8 +28,8 @@
   },
   "devDependencies": {
     "tsx": "^4.20.5",
-    "vitest": "^3",
+    "vitest": "^3.2.4",
     "@kb-labs/devkit": "github:KirillBaranov/kb-labs-devkit#main",
-    "tsup": "^8"
+    "tsup": "^8.5.0"
   }
 }

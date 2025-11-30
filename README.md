@@ -63,6 +63,12 @@ cp -r packages/package-name packages/<new-package-name>
 - **DevKit Integration**: Zero-maintenance configurations via `@kb-labs/devkit`
 - **Multi-Package Support**: pnpm workspaces for monorepo structure
 
+## 📖 Documentation
+
+- 📦 [Naming Convention](./docs/naming-convention.md) - The Pyramid Rule (mandatory!)
+- 📚 [Documentation Guide](./docs/DOCUMENTATION.md) - How to document your product
+- 🏛️ [ADRs](./docs/adr/) - Architecture Decision Records
+
 ## 📁 Repository Structure
 
 ```
@@ -73,6 +79,8 @@ kb-labs-product-template/
 │   └── package-name/        # Example package (lib/cli/adapter)
 ├── fixtures/                # Fixtures for snapshot/integration testing
 ├── docs/                    # Documentation
+│   ├── naming-convention.md # The Pyramid Rule (NEW!)
+│   ├── DOCUMENTATION.md     # Documentation guide
 │   └── adr/                 # Architecture Decision Records (ADRs)
 └── scripts/                 # Utility scripts
 ```
