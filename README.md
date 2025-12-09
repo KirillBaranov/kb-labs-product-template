@@ -193,3 +193,8 @@ MIT © KB Labs
 ---
 
 **See [CONTRIBUTING.md](./CONTRIBUTING.md) for development guidelines and contribution process.**
+
+
+## License
+
+MIT License - see [LICENSE](LICENSE) for details.
